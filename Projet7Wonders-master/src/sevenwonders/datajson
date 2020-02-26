@@ -1,0 +1,29 @@
+package sevenwonders;
+
+import java.io.File;
+
+
+
+
+
+public class datajson{
+
+	public static void main(String[] args) {
+	testJSONfile();
+	}
+	
+    public static void testJSONfile() {
+    	Gson gson = new Gson();
+    	File file = new File("DateVersionFinale.json");
+    	
+    	try (FileReader reader = new FileReader(file)){
+    		List<Data> data= gson.fromJson(reader, new TypeToken<List<Data>>() {}.getType());
+    	
+    	for (
+    		
+    	catch (Exception e) {
+    		e.printStackTrace();
+    		
+    	}
+   
+}
